@@ -1,6 +1,5 @@
 import Link from "next/link";
 import {
-  RegisterLink,
   LoginLink,
   LogoutLink,
 } from "@kinde-oss/kinde-auth-nextjs/components";
@@ -57,7 +56,7 @@ const Navbar = async () => {
           {isUserAuthenticated ? (
             <>
               <li className="btn btn-ghost bg-red-500 text-white font-bold">
-                <LogoutLink>Log out</LogoutLink>
+                <LogoutLink postLogoutRedirectURL="https://blogger-kappa-rust.vercel.app/">Log out</LogoutLink>
               </li>
             </>
           ) : (
