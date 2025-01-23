@@ -55,14 +55,14 @@ const Navbar = async () => {
         <ul>
           {isUserAuthenticated ? (
             <>
-              <li className="btn btn-ghost bg-red-500 text-white font-bold">
-                <LogoutLink postLogoutRedirectURL="https://blogger-kappa-rust.vercel.app/">Log out</LogoutLink>
+              <li >
+                <LogoutLink className="btn btn-ghost bg-red-500 text-white font-bold" postLogoutRedirectURL="https://blogger-kappa-rust.vercel.app/">Log out</LogoutLink>
               </li>
             </>
           ) : (
             <>
-              <li className="btn btn-ghost bg-green-500 text-white font-bold">
-                <LoginLink>Login</LoginLink>
+              <li >
+                <LoginLink className="btn btn-ghost bg-green-500 text-white font-bold">Login</LoginLink>
               </li>
               
             </>
